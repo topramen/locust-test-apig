@@ -9,7 +9,7 @@ class User1(HttpUser):
         super().__init__(*args, **kwargs)
         self.identifier = uuid.uuid4()
 
-    @task (3)
+    @task (1)
     def get_task(self):
         self.client.get(f"/hash?id={self.identifier}")
 
