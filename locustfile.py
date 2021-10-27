@@ -14,4 +14,4 @@ class User1(HttpUser):
         self.client.get(f"/hash?id={self.identifier}")
 
     def on_start(self):
-        self.client.post("/hash", json={"ID":f"{self.identifier}", "document":"the same old message"}
+        self.client.post("/hash", json={"ID":f"{self.identifier}", "document":"the same old message"})
